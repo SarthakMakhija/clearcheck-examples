@@ -1,0 +1,8 @@
+[package]
+name = "clearcheck-examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clearcheck = { version = "0.0.1", git = "https://github.com/SarthakMakhija/clearcheck", features = ["num", "date", "regex", "file"] }
+regex = "1.10.2"
