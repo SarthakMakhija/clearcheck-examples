@@ -82,8 +82,11 @@ dependencies = [
 name = "clearcheck-examples"
 version = "0.1.0"
 dependencies = [
+ "chrono",
  "clearcheck",
+ "num",
  "regex",
+ "walkdir",
 ]
 
 [[package]]

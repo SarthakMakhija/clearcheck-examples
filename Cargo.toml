@@ -3,6 +3,9 @@ name = "clearcheck-examples"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
+[dev-dependencies]
 clearcheck = { version = "0.0.1", git = "https://github.com/SarthakMakhija/clearcheck", features = ["num", "date", "regex", "file"] }
-regex = "1.10.2"
+chrono = { version = "0.4.31" }
+num = { version = "0.4.1" }
+regex = { version = "1.10.2" }
+walkdir = { version = "2.4.0", features = [] }
