@@ -1,0 +1,1 @@
+[![clearcheck-examples](https://github.com/SarthakMakhija/clearcheck-examples/actions/workflows/build.yml/badge.svg)](https://github.com/SarthakMakhija/clearcheck-examples/actions/workflows/build.yml)
