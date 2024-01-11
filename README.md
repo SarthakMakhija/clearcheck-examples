@@ -18,8 +18,7 @@ fn should_be_a_valid_passphrase() {
     let pass_phrase = "P@@sw0rd1 zebra alpha";
     pass_phrase.should_not_be_empty()
         .should_have_at_least_length(10)
-        .should_contain_character('@')
-        .should_contain_character(' ')
+        .should_contain_all_characters(&['@', ' '])
         .should_contain_a_digit()
         .should_not_contain_ignoring_case("pass")
         .should_not_contain_ignoring_case("word");
