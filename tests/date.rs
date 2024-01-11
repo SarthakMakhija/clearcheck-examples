@@ -20,3 +20,14 @@ fn should_be_a_valid_new_year_date() {
         .should_have_month(1);
 }
 
+#[test]
+fn should_be_a_valid_festive_date() {
+    let festive_month = 10;
+    let date = NaiveDate::from_ymd_opt(2024, festive_month, 15).unwrap();
+    date.should_have_month(festive_month)
+        .should_be_in_inclusive_range(
+            NaiveDate::from_ymd_opt(2024, festive_month, 1).unwrap()..=
+                NaiveDate::from_ymd_opt(2024, festive_month, 31).unwrap()
+        );
+}
+
