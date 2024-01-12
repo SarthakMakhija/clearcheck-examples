@@ -58,7 +58,7 @@ fn should_be_a_valid_list_of_sugar_contents() {
 }
 ```
 
-### Custom matchers
+#### Custom matchers
 
 ```rust
 #[cfg(test)]
