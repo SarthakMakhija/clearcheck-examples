@@ -70,7 +70,7 @@ dependencies = [
 [[package]]
 name = "clearcheck"
 version = "0.0.1"
-source = "git+https://github.com/SarthakMakhija/clearcheck#7a140f7228fb7f5ed2ac92c66558d7a818c22851"
+source = "git+https://github.com/SarthakMakhija/clearcheck#844b2e1530676bab45771fa578b4bdaf58259964"
 dependencies = [
  "chrono",
  "num",

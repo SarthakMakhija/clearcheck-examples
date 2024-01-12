@@ -14,7 +14,7 @@ fn should_be_a_valid_directory() {
     let _ = File::create(file_path_clearcheck).unwrap();
 
     temporary_directory.should_be_a_directory()
-        .should_contain_all_file_names(&["junit.txt", "clearcheck.txt"])
+        .should_contain_all_file_names(vec!["junit.txt", "clearcheck.txt"])
         .should_not_be_zero_sized()
         .should_not_contain_file_name("gotest.txt");
 }
