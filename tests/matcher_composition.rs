@@ -10,7 +10,7 @@ mod custom_string_matchers_tests {
     use clearcheck::matchers::string::membership::{contain_a_digit, contain_any_of_characters, contain_ignoring_case};
 
     fn be_a_valid_password<T: AsRef<str> + Debug>() -> Matchers<T> {
-        MatchersBuilder::start_building_with_negated(be_empty().boxed())
+        MatchersBuilder::start_building_with_inverted(be_empty().boxed())
             .push(have_atleast_same_length(10).boxed())
             .push(contain_a_digit().boxed())
             .push(contain_any_of_characters(vec!['@', '#']).boxed())
@@ -70,7 +70,7 @@ mod custom_collection_matchers_tests {
         let contain_all = contain_all(all);
         let sorted = be_sorted_ascending();
 
-        MatchersBuilder::<Vec<LaptopBrands>>::start_building_with_negated(empty.boxed())
+        MatchersBuilder::<Vec<LaptopBrands>>::start_building_with_inverted(empty.boxed())
             .push(size.boxed())
             .push(contain_all.boxed())
             .push(sorted.boxed())
