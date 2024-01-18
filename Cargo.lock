@@ -69,9 +69,8 @@ dependencies = [
 
 [[package]]
 name = "clearcheck"
-version = "0.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "624f5f7e882523e0dd8eef005db1f8459916f9c1d1088d969b7ab6a9232bec59"
+version = "0.0.2"
+source = "git+https://github.com/SarthakMakhija/clearcheck#a3caecc0b5d63cc1db6e1242ff1a5be2122b7f97"
 dependencies = [
  "chrono",
  "num",
@@ -81,7 +80,7 @@ dependencies = [
 
 [[package]]
 name = "clearcheck-examples"
-version = "0.1.0"
+version = "0.0.1"
 dependencies = [
  "chrono",
  "clearcheck",
