@@ -4,7 +4,7 @@ version = "0.0.1"
 edition = "2021"
 
 [dev-dependencies]
-clearcheck = { version = "0.0.2", git = "https://github.com/SarthakMakhija/clearcheck", features = ["num", "date", "regex", "file"] }
+clearcheck = { version = "0.0.2", features = ["num", "date", "regex", "file"] }
 chrono = { version = "0.4.31" }
 num = { version = "0.4.1" }
 regex = { version = "1.10.2" }
